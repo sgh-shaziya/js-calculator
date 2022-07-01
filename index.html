@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Calculator</title>
+</head>
+<body>
+    <script>
+        const left = +prompt('log left number');
+        const operator = prompt('log operator');
+        const right = +prompt('log right number');
+        let result = 0;
+
+        switch (operator) {
+            case "+":
+                result = left + right;
+                break;
+            case "-":
+                result = left - right;
+                break;
+            case "*":
+                result = left * right;
+                break;
+            case "/":
+                result = left / right;
+                break;
+        default:
+            //result = "not found"
+            break;
+        }
+        console.log(left);
+        console.log(operator);
+        console.log(right);
+        console.log(result);
+    </script>
+</body>
+</html>
